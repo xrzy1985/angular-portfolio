@@ -1,0 +1,41 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+.button-link {
+  color: black;
+}
+
+.div-img {
+  display: flex;
+  justify-content: center;
+}
+
+.div-img {
+  border-radius: 25px;
+}
+
+.remove-border .mat-tab-header {
+  border-bottom: none;
+}
+
+.toolbar {
+  height: 10vh;
+}
+
+/* Styles for tab labels */
+.mat-tab-label {
+  background-color: transparent;
+  color: #B2B9E1;
+}
+
+/* Styles for the active tab label */
+.mat-tab-label.mat-tab-label-active {
+  background-color: transparent;
+  color: white;
+}
+
+/* mat menu */
+::ng-deep .mat-menu-content {
+  background-color: transparent;
+ }
