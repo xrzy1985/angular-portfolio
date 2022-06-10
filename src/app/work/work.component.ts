@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DynamicObject } from '../interfaces/DynamicObject';
 import '../../styles.scss';
 
 @Component({
@@ -7,6 +8,7 @@ import '../../styles.scss';
   styleUrls: ['./work.component.scss'],
 })
 export class WorkComponent implements OnInit {
+  container: DynamicObject[] = [];
   constructor() {}
 
   ngOnInit(): void {}

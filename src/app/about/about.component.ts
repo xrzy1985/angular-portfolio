@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import constants from '../state/constants.json';
-import { DynamicObject } from '../state/DynamicObject';
+import { DynamicObject } from '../interfaces/DynamicObject';
 import '../../styles.scss';
 
 @Component({
