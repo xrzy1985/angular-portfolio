@@ -1,5 +1,18 @@
-<div class="main">
+<div class="viewport">
     <app-header></app-header>
-    <app-about></app-about>
+    <div class="main">
+        <div *ngIf="getTab() === 0;else work_content">
+            <app-about></app-about>
+        </div>
+        <ng-template #work_content>
+            <div *ngIf="getTab() === 1;else content">
+                <app-work></app-work>
+            </div>
+            <ng-template #content>
+                <p>404</p>
+            </ng-template>
+        </ng-template>
+    </div>
+    <!-- @todo footer css -->
     <app-footer></app-footer>
 </div>

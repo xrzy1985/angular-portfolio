@@ -17,7 +17,7 @@
   <mat-tab-group class="remove-border"
                   *ngFor="let tab of tabs; let i = index"
                   [selectedIndex]="tabSelected.value"
-                  (click)="onClick(tab, i)">
+                  (click)="onClick(i)">
     <mat-tab aria-label={{tab.title}}
               class="tab"
               label={{tab.title}}>
