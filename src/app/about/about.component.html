@@ -1,1 +1,7 @@
-<h4>about</h4>
+<mat-list *ngFor="let topic of container; let i = index;">
+    <div mat-subheader>{{topic['topic']}}</div>
+    <mat-list-item style="height: auto;">
+        <div style="margin: 2vh 5vw 2vh;">{{topic['details']}}</div>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+</mat-list>

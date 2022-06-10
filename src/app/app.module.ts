@@ -7,6 +7,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTableModule } from '@angular/material/table';
@@ -20,7 +21,14 @@ import { AboutComponent } from './about/about.component';
 import { WorkComponent } from './work/work.component';
 
 @NgModule({
-  declarations: [AppComponent, MainComponent, HeaderComponent, FooterComponent, AboutComponent, WorkComponent],
+  declarations: [
+    AppComponent,
+    AboutComponent,
+    FooterComponent,
+    HeaderComponent,
+    MainComponent,
+    WorkComponent,
+  ],
   imports: [
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -29,6 +37,7 @@ import { WorkComponent } from './work/work.component';
     MatButtonModule,
     MatButtonToggleModule,
     MatIconModule,
+    MatListModule,
     MatMenuModule,
     MatSidenavModule,
     MatTableModule,
