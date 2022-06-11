@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DynamicObject } from '../interfaces/DynamicObject';
+import constants from '../state/constants.json';
 import '../../styles.scss';
 
 @Component({
@@ -8,8 +9,23 @@ import '../../styles.scss';
   styleUrls: ['./work.component.scss'],
 })
 export class WorkComponent implements OnInit {
+  jobs: string[] = [];
+  jobsDetails: string[] = [];
+  details: DynamicObject = constants['work-experience'];
   container: DynamicObject[] = [];
+
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.jobs = this.details['jobs'];
+    this.jobsDetails = this.details['details'];
+    this.cleanContainer();
+    for (let i = 0, iLen = this.jobs.length; i < iLen; i++) {
+      this.container.push(this.details[this.jobs[i]]);
+    }
+  }
+
+  cleanContainer = () => {
+    this.container = [];
+  };
 }

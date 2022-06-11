@@ -21,7 +21,6 @@ export class AboutComponent implements OnInit {
     for (let i = 0, iLen = this.topics.length; i < iLen; i++) {
       this.container.push(this.details[this.topics[i]]);
     }
-    console.log(this.container);
   }
 
   cleanContainer = () => {
