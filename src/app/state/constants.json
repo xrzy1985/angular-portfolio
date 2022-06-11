@@ -45,8 +45,8 @@
     "random-photo-url": "https://picsum.photos/50",
     "resume": "resume_06082022.doc",
     "tab-section-headers": ["Front End Software Engineer", "Experience"],
+    "work-details": ["Amdocs Inc. (2018 - 2019)", "Tillster Inc. (2019 - Current)", "Company (Current - Future)"],
     "work-experience": {
-        "details": ["Amdocs Inc. (2018 - 2019)", "Tillster Inc. (2019 - Current)", "Company (Current - Future)"],
         "jobs": ["Amdocs", "Tillster", "Company"],
         "Amdocs": {
             "position": "Front End Software Engineer | Atlanta, Ga",
@@ -64,5 +64,4 @@
             "details": "Job Description | I know I want to stick to front end work, but as far as frameworks, I am an open book. The bottom line for me is that I love to program, solve problems, and get paid to do so. I strive to find a good solid team that wants to produce high quality software without forgetting the simple fact that we all should continue to grow. If I know one thing for certain, it is the fact that I do not know everything. I'll definitely be looking forward to the next challenge that will present itself."
         }
     }
-
 }

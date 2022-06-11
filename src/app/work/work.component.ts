@@ -10,7 +10,7 @@ import '../../styles.scss';
 })
 export class WorkComponent implements OnInit {
   jobs: string[] = [];
-  jobsDetails: string[] = [];
+  jobsDetails: string[] = constants['work-details'];
   details: DynamicObject = constants['work-experience'];
   container: DynamicObject[] = [];
 
@@ -18,7 +18,6 @@ export class WorkComponent implements OnInit {
 
   ngOnInit(): void {
     this.jobs = this.details['jobs'];
-    this.jobsDetails = this.details['details'];
     this.cleanContainer();
     for (let i = 0, iLen = this.jobs.length; i < iLen; i++) {
       this.container.push(this.details[this.jobs[i]]);
